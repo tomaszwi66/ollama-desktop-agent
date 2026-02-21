@@ -47,6 +47,8 @@ ollama serve
 ollama pull jobautomation/OpenEuroLLM-Polish:latest
 ```
 
+> 💡 You can use **any Ollama model** instead of the default one. See [Changing the Model](#changing-the-model) in the Configuration section.
+
 ### 2. Clone & Install
 
 ```bash
