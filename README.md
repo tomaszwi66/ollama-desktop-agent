@@ -1,4 +1,4 @@
-<h1 align="center">🤖 ATLAS — AI Task & Automation System</h1>
+<h1 align="center">🤖 ATLAS - AI Task & Automation System</h1>
 
 <p align="center">
   <img src="https://img.shields.io/badge/Python-3.10+-3776AB?style=for-the-badge&logo=python&logoColor=white" />
@@ -29,10 +29,10 @@
 
 ### 🧠 Agent Intelligence
 
-- **Plan → Execute → Verify** — every task goes through a full lifecycle
-- **Self-healing** — automatic retries with LLM-corrected parameters on failure
-- **Safety** — dangerous commands are blocked, plans require user confirmation
-- **Path intelligence** — understands "Desktop", "Documents", "Downloads" as real paths
+- **Plan → Execute → Verify** - every task goes through a full lifecycle
+- **Self-healing** - automatic retries with LLM-corrected parameters on failure
+- **Safety** - dangerous commands are blocked, plans require user confirmation
+- **Path intelligence** - understands "Desktop", "Documents", "Downloads" as real paths
 
 ---
 
@@ -208,7 +208,7 @@ atlas/
 |------|-----------|-------------|
 | `run_shell` | command | Execute CMD command |
 | `run_powershell` | command | Execute PowerShell command |
-| `get_system_info` | — | Get system information |
+| `get_system_info` | - | Get system information |
 
 ### GUI Automation
 
@@ -287,7 +287,7 @@ default="your-model:latest"
 
 - ⛔ Blocked commands: `format`, `del /s /q c:`, `shutdown`, `rm -rf /`
 - ✅ User confirmation required before executing any plan
-- 🔒 Path validation via `PathResolver` — no accidental system file access
+- 🔒 Path validation via `PathResolver` - no accidental system file access
 - 🔍 Post-execution verification by the LLM
 - 📝 Full logging of every action to `logs/` directory
 
@@ -311,7 +311,7 @@ Key Python dependencies: `ollama`, `openpyxl`, `matplotlib`, `selenium`, `webdri
 This usually means the model is too small or not instruction-tuned well enough. Try a larger or better model. Models with at least 7B parameters work most reliably. Smaller models (1.5B–3B) may struggle with complex multi-step tasks.
 
 **"Model not found" error**
-Make sure the model name in the command matches exactly what `ollama list` shows — including capitalisation and tag (e.g. `:latest`).
+Make sure the model name in the command matches exactly what `ollama list` shows - including capitalisation and tag (e.g. `:latest`).
 
 **Selenium / Chrome not working**
 Make sure Google Chrome is installed. The `webdriver-manager` package downloads the correct ChromeDriver automatically, but it requires an internet connection on first run.
@@ -323,7 +323,7 @@ Requires either `Pillow` or `pyautogui` to be installed. Run `pip install Pillow
 Try increasing `num_ctx` in the code (default: 2048). For complex tasks, the LLM may lose context. Setting it to 4096 helps but requires more RAM.
 
 **PyAutoGUI FailSafeException**
-Move your mouse to the top-left corner of the screen triggers a safety stop. This is intentional — just rerun the task.
+Move your mouse to the top-left corner of the screen triggers a safety stop. This is intentional - just rerun the task.
 
 ---
 
@@ -339,6 +339,4 @@ Move your mouse to the top-left corner of the screen triggers a safety stop. Thi
 
 ## 📄 License
 
-This project is licensed under the MIT License — see the [LICENSE](LICENSE) file for details.
-
-<p align="center">Built with ❤️ and local AI</p>
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
