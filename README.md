@@ -340,5 +340,3 @@ Move your mouse to the top-left corner of the screen triggers a safety stop. Thi
 ## 📄 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-<p align="center">Built with ❤️ and local AI</p>
