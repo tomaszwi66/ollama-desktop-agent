@@ -305,6 +305,28 @@ Key Python dependencies: `ollama`, `openpyxl`, `matplotlib`, `selenium`, `webdri
 
 ---
 
+## 🔧 Troubleshooting
+
+**LLM doesn't generate a valid plan / JSON errors**
+This usually means the model is too small or not instruction-tuned well enough. Try a larger or better model. Models with at least 7B parameters work most reliably. Smaller models (1.5B–3B) may struggle with complex multi-step tasks.
+
+**"Model not found" error**
+Make sure the model name in the command matches exactly what `ollama list` shows - including capitalisation and tag (e.g. `:latest`).
+
+**Selenium / Chrome not working**
+Make sure Google Chrome is installed. The `webdriver-manager` package downloads the correct ChromeDriver automatically, but it requires an internet connection on first run.
+
+**Screenshots not working**
+Requires either `Pillow` or `pyautogui` to be installed. Run `pip install Pillow pyautogui` and try again.
+
+**Tasks work but results are wrong**
+Try increasing `num_ctx` in the code (default: 2048). For complex tasks, the LLM may lose context. Setting it to 4096 helps but requires more RAM.
+
+**PyAutoGUI FailSafeException**
+Move your mouse to the top-left corner of the screen triggers a safety stop. This is intentional - just rerun the task.
+
+---
+
 ## 🤝 Contributing
 
 1. Fork the repository
