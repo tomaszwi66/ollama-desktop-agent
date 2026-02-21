@@ -1,10 +1,12 @@
 <h1 align="center">🤖 ATLAS — AI Task & Automation System</h1>
+
 <p align="center">
   <img src="https://img.shields.io/badge/Python-3.10+-3776AB?style=for-the-badge&logo=python&logoColor=white" />
   <img src="https://img.shields.io/badge/Platform-Windows%2010%2F11-0078D6?style=for-the-badge&logo=windows&logoColor=white" />
   <img src="https://img.shields.io/badge/LLM-Ollama%20Local-FF6F00?style=for-the-badge" />
   <img src="https://img.shields.io/badge/License-MIT-green?style=for-the-badge" />
 </p>
+
 <p align="center">
   A fully autonomous AI agent powered by a <strong>local Ollama LLM</strong> that can
   plan, execute, and verify desktop automation tasks on Windows.
@@ -27,10 +29,10 @@
 
 ### 🧠 Agent Intelligence
 
-- **Plan → Execute → Verify** - every task goes through a full lifecycle
-- **Self-healing** - automatic retries with LLM-corrected parameters on failure
-- **Safety** - dangerous commands are blocked, plans require user confirmation
-- **Path intelligence** - understands "Desktop", "Documents", "Downloads" as real paths
+- **Plan → Execute → Verify** — every task goes through a full lifecycle
+- **Self-healing** — automatic retries with LLM-corrected parameters on failure
+- **Safety** — dangerous commands are blocked, plans require user confirmation
+- **Path intelligence** — understands "Desktop", "Documents", "Downloads" as real paths
 
 ---
 
@@ -204,7 +206,7 @@ atlas/
 |------|-----------|-------------|
 | `run_shell` | command | Execute CMD command |
 | `run_powershell` | command | Execute PowerShell command |
-| `get_system_info` | - | Get system information |
+| `get_system_info` | — | Get system information |
 
 ### GUI Automation
 
@@ -273,7 +275,7 @@ python atlas.py --model "qwen2.5:1.5b-instruct"
 
 - ⛔ Blocked commands: `format`, `del /s /q c:`, `shutdown`, `rm -rf /`
 - ✅ User confirmation required before executing any plan
-- 🔒 Path validation via `PathResolver` - no accidental system file access
+- 🔒 Path validation via `PathResolver` — no accidental system file access
 - 🔍 Post-execution verification by the LLM
 - 📝 Full logging of every action to `logs/` directory
 
@@ -303,6 +305,6 @@ Key Python dependencies: `ollama`, `openpyxl`, `matplotlib`, `selenium`, `webdri
 
 ## 📄 License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License — see the [LICENSE](LICENSE) file for details.
 
 <p align="center">Built with ❤️ and local AI</p>
