@@ -1,12 +1,10 @@
-# 🤖 ATLAS - AI Task & Automation System
-
+<h1 align="center">🤖 ATLAS — AI Task & Automation System</h1>
 <p align="center">
   <img src="https://img.shields.io/badge/Python-3.10+-3776AB?style=for-the-badge&logo=python&logoColor=white" />
   <img src="https://img.shields.io/badge/Platform-Windows%2010%2F11-0078D6?style=for-the-badge&logo=windows&logoColor=white" />
   <img src="https://img.shields.io/badge/LLM-Ollama%20Local-FF6F00?style=for-the-badge" />
   <img src="https://img.shields.io/badge/License-MIT-green?style=for-the-badge" />
 </p>
-
 <p align="center">
   A fully autonomous AI agent powered by a <strong>local Ollama LLM</strong> that can
   plan, execute, and verify desktop automation tasks on Windows.
