@@ -1,0 +1,13 @@
+ollama
+pyautogui
+openpyxl
+matplotlib
+selenium
+webdriver-manager
+Pillow
+rich
+python-docx
+beautifulsoup4
+requests
+pyperclip
+psutil
